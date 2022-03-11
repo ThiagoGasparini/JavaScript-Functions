@@ -110,9 +110,23 @@ function decode(word) {
 
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+// .sort estudado em https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+function techList(tech, name) {
+tech.sort();
+  let message = [];
+  for (let i = 0; i < tech.length; i += 1) {
+    let nameTech = {
+      tech: tech[i],
+      name: name,
+    };
+    message.push(nameTech);
+  }
+  if (tech.length === 0) {
+    return 'Vazio!';
+  }
+  return message;
 }
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'Javascript'], 'Lucas'));
 
 module.exports = {
   calcArea,
