@@ -1,16 +1,27 @@
 // Desafio 1
 function compareTrue() {
-   
+
+  let idadeMinima = 18;
+  let NotaMinima = 8;
+  let idade = 18;
+  let nota = 8;
+
+  if (idade >= idadeMinima && nota >= NotaMinima) {
+    return true
+  } else {
+    return false
+  }
 }
+
 
 // Desafio 2
 function calcArea(base, height) {
   let resultArea = (base * height) / 2;
-  
+
   let resultado = {
     area: resultArea,
-}
-return resultado;
+  }
+  return resultado;
 }
 
 
@@ -26,9 +37,6 @@ function concatName(arr) {
   let resultado = arr[0] + ',' + ' ' + arr[arr.length - 1];
   return resultado;
 }
-
-
-
 
 // Desafio 5
 function footballPoints() {
