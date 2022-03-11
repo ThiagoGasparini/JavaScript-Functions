@@ -1,13 +1,9 @@
 // Desafio 1
-function compareTrue() {
-  let idadeMinima = 18;
-  let NotaMinima = 8;
-  let idade = 18;
-  let nota = 8;
-
-  if (idade >= idadeMinima && nota >= NotaMinima) {
+function compareTrue(parameter1, parameter2) {
+  if (parameter1 && parameter2 === true) {
     return true;
-  } else {
+  }
+  else {
     return false;
   }
 }
