@@ -15,15 +15,18 @@ return resultado;
 
 
 // Desafio 3
-function splitSentence() {
-  
-}
-
-// Desafio 4
-function concatName(string) {
+function splitSentence(string) {
   let resultado = string.split(" ");
   return resultado;
 }
+
+// Desafio 4
+let arr = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']
+function concatName(arr) {
+  let resultado = arr[0] + ',' + ' ' + arr[arr.length - 1];
+  return resultado;
+}
+
 
 
 
