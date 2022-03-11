@@ -1,12 +1,18 @@
 // Desafio 1
 function compareTrue() {
-  // 
+   
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let resultArea = (base * height) / 2;
+  
+  let resultado = {
+    area: resultArea,
 }
+return resultado
+}
+
 
 // Desafio 3
 function splitSentence() {
