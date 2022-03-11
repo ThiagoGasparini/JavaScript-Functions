@@ -10,19 +10,22 @@ function calcArea(base, height) {
   let resultado = {
     area: resultArea,
 }
-return resultado
+return resultado;
 }
 
 
 // Desafio 3
 function splitSentence() {
-  // seu código aqui
+  
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(string) {
+  let resultado = string.split(" ");
+  return resultado;
 }
+
+
 
 // Desafio 5
 function footballPoints() {
