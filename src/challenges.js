@@ -71,8 +71,21 @@ function catAndMouse(cat1, mouse, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+let array = [2, 15, 7, 9, 45]
+function fizzBuzz(array) {
+  let puxar = [];
+  for (let num of array) {
+    if (num % 15 === 0) {
+      puxar.push('fizzBuzz');
+    } else if (num % 5 === 0) {
+      puxar.push('buzz');
+    } else if (num % 3 === 0) {
+      puxar.push('fizz');
+    } else {
+      puxar.push('bug!');
+    }
+  }
+  return puxar;
 }
 
 // Desafio 9
