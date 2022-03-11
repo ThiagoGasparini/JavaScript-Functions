@@ -7,9 +7,9 @@ function compareTrue() {
   let nota = 8;
 
   if (idade >= idadeMinima && nota >= NotaMinima) {
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 }
 
@@ -38,7 +38,8 @@ function concatName(arr) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return resultado = wins * 3 + ties + ' ' + 'pontos!'
+  resultado = wins * 3 + ties + ' ' + 'pontos!'
+  return resultado;
 }
 
 // Desafio 6
@@ -52,12 +53,21 @@ function highestCount() {
   }
   return repeatNum;
 }
-  
-
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+// Math.abs() pesquisa feita no MDN. retorna o valor absoluto do número passado não negativo;
+function catAndMouse(cat1, mouse, cat2) {
+  let dist1 = Math.abs(cat1 - mouse); 
+  let dist2 = Math.abs(cat2 - mouse);
+  let resultado = '';
+  if (dist1 < dist2) {
+    resultado = 'cat1';
+  } else if (dist2 < dist1) {
+    resultado = 'cat2';
+  } else if (dist1 === dist2) {
+    resultado = 'os gatos se trombam e o rato consegue fugir xD';
+  }
+  return resultado;
 }
 
 // Desafio 8
