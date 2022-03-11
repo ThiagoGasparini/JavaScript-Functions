@@ -4,7 +4,7 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck() {
+
   function triangleCheck(lineA, lineB, lineC) {
     if (lineA < Math.abs(lineB - lineC) //Math.abs retorna numero inteiro positivo
       || lineB < Math.abs(lineA - lineC) //comando 'OU'
@@ -13,7 +13,7 @@ function triangleCheck() {
     }
     return true;
   }
-}
+
 
 // Desafio 13
 function hydrate() {
