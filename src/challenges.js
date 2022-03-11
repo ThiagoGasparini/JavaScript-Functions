@@ -2,8 +2,7 @@
 function compareTrue(parameter1, parameter2) {
   if (parameter1 && parameter2 === true) {
     return true;
-  }
-  else {
+  } else {
     return false;
   }
 }
@@ -33,8 +32,7 @@ function concatName(arr) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  resultado = wins * 3 + ties + ' ' + 'pontos!';
-  return resultado;
+  return wins * 3 + ties;
 }
 
 // Desafio 6
