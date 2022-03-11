@@ -57,7 +57,7 @@ function highestCount() {
 // Desafio 7
 // Math.abs() pesquisa feita no MDN. retorna o valor absoluto do número passado não negativo;
 function catAndMouse(cat1, mouse, cat2) {
-  let dist1 = Math.abs(cat1 - mouse); 
+  let dist1 = Math.abs(cat1 - mouse);
   let dist2 = Math.abs(cat2 - mouse);
   let resultado = '';
   if (dist1 < dist2) {
@@ -89,12 +89,25 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+// .replace estudado em https://pt.stackoverflow.com/questions/529882/como-substituir-uma-letra-por-um-n%C3%BAmero-em-uma-string-em-javascript
+function encode(word) {
+  word = word.replace(/a/g, '1'); 
+  word = word.replace(/e/g, '2');
+  word = word.replace(/i/g, '3');
+  word = word.replace(/o/g, '4');
+  word = word.replace(/u/g, '5');
+  return word;
 }
-function decode() {
-  // seu código aqui
+
+function decode(word) {
+  word = word.replace(/1/g, 'a'); 
+  word = word.replace(/2/g, 'e');
+  word = word.replace(/3/g, 'i');
+  word = word.replace(/4/g, 'o');
+  word = word.replace(/5/g, 'u');
+  return word;
 }
+
 
 // Desafio 10
 function techList() {
