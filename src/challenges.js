@@ -13,7 +13,6 @@ function compareTrue() {
   }
 }
 
-
 // Desafio 2
 function calcArea(base, height) {
   let resultArea = (base * height) / 2;
@@ -23,7 +22,6 @@ function calcArea(base, height) {
   }
   return resultado;
 }
-
 
 // Desafio 3
 function splitSentence(string) {
@@ -39,8 +37,8 @@ function concatName(arr) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return resultado = wins * 3 + ties + ' ' + 'pontos!'
 }
 
 // Desafio 6
