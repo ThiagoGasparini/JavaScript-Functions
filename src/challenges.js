@@ -1,6 +1,5 @@
 // Desafio 1
 function compareTrue() {
-
   let idadeMinima = 18;
   let NotaMinima = 8;
   let idade = 18;
@@ -19,18 +18,18 @@ function calcArea(base, height) {
 
   let resultado = {
     area: resultArea,
-  }
+  };
   return resultado;
 }
 
 // Desafio 3
 function splitSentence(string) {
-  let resultado = string.split(" ");
+  let resultado = string.split(' ');
   return resultado;
 }
 
 // Desafio 4
-let arr = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']
+let arr = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 function concatName(arr) {
   let resultado = arr[0] + ',' + ' ' + arr[arr.length - 1];
   return resultado;
@@ -38,7 +37,7 @@ function concatName(arr) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  resultado = wins * 3 + ties + ' ' + 'pontos!'
+  resultado = wins * 3 + ties + ' ' + 'pontos!';
   return resultado;
 }
 
@@ -71,7 +70,7 @@ function catAndMouse(cat1, mouse, cat2) {
 }
 
 // Desafio 8
-let array = [2, 15, 7, 9, 45]
+let array = [2, 15, 7, 9, 45];
 function fizzBuzz(array) {
   let puxar = [];
   for (let num of array) {
@@ -91,7 +90,7 @@ function fizzBuzz(array) {
 // Desafio 9
 // .replace estudado em https://pt.stackoverflow.com/questions/529882/como-substituir-uma-letra-por-um-n%C3%BAmero-em-uma-string-em-javascript
 function encode(word) {
-  word = word.replace(/a/g, '1'); 
+  word = word.replace(/a/g, '1');
   word = word.replace(/e/g, '2');
   word = word.replace(/i/g, '3');
   word = word.replace(/o/g, '4');
@@ -100,7 +99,7 @@ function encode(word) {
 }
 
 function decode(word) {
-  word = word.replace(/1/g, 'a'); 
+  word = word.replace(/1/g, 'a');
   word = word.replace(/2/g, 'e');
   word = word.replace(/3/g, 'i');
   word = word.replace(/4/g, 'o');
@@ -108,11 +107,10 @@ function decode(word) {
   return word;
 }
 
-
 // Desafio 10
 // .sort estudado em https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 function techList(tech, name) {
-tech.sort();
+  tech.sort();
   let message = [];
   for (let i = 0; i < tech.length; i += 1) {
     let nameTech = {
