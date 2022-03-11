@@ -31,8 +31,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  let num = [9, 1, 2, 3, 9, 5, 7];
+function highestCount(num) {
   let repeatNum = 0;
   for (let array of num) {
     if (array === Math.max(...num)) {
@@ -44,19 +43,18 @@ function highestCount() {
 
 // Desafio 7
 // Math.abs() pesquisa feita no MDN. retorna o valor absoluto do número passado não negativo;
-function catAndMouse(cat1, mouse, cat2) {
+function catAndMouse(mouse, cat1, cat2) {
   let dist1 = Math.abs(cat1 - mouse);
   let dist2 = Math.abs(cat2 - mouse);
-  let resultado = '';
+
   if (dist1 < dist2) {
-    resultado = 'cat1';
+    return 'cat1';
   } else if (dist2 < dist1) {
-    resultado = 'cat2';
-  } else if (dist1 === dist2) {
-    resultado = 'os gatos se trombam e o rato consegue fugir xD';
+    return 'cat2';
   }
-  return resultado;
+  return "os gatos trombam e o rato foge";
 }
+
 
 // Desafio 8
 let array = [2, 15, 7, 9, 45];
