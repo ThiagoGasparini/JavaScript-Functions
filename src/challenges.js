@@ -1,6 +1,6 @@
 // Desafio 1
-function compareTrue(parameter1, parameter2) {
-  if (parameter1 && parameter2 === true) {
+function compareTrue(p1, p2) {
+  if (p1 && p2 === true) {
     return true;
   } else {
     return false;
@@ -14,7 +14,7 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  let resultado = string.split(' ');
+  let resultado = string.split(" ");
   return resultado;
 }
 
@@ -27,7 +27,8 @@ function concatName(arr) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return wins * 3 + ties;
+  resultado = (wins * 3) + ties;
+  return resultado
 }
 
 // Desafio 6
@@ -52,16 +53,14 @@ function catAndMouse(mouse, cat1, cat2) {
   } else if (dist2 < dist1) {
     return 'cat2';
   }
-  return "os gatos trombam e o rato foge";
+  return 'os gatos trombam e o rato foge';
 }
 
-
 // Desafio 8
-let array = [2, 15, 7, 9, 45];
 function fizzBuzz(array) {
   let puxar = [];
   for (let num of array) {
-    if (num % 15 === 0) {
+    if (num % 3 === 0 && num % 5 === 0) {
       puxar.push('fizzBuzz');
     } else if (num % 5 === 0) {
       puxar.push('buzz');
@@ -75,7 +74,8 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-// .replace estudado em https://pt.stackoverflow.com/questions/529882/como-substituir-uma-letra-por-um-n%C3%BAmero-em-uma-string-em-javascript
+// .replace estudado em https://ricardo-reis.medium.com/string-replace-para-substituir-substrings-no-javascript-6db625e5fbc5
+// o sinalizador global 'g' é usado para substituir todas as ocorrências da letra em questão!!!
 function encode(word) {
   word = word.replace(/a/g, '1');
   word = word.replace(/e/g, '2');
@@ -98,20 +98,20 @@ function decode(word) {
 // .sort estudado em https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 function techList(tech, name) {
   tech.sort();
-  let message = [];
+  let msg = [];
   for (let i = 0; i < tech.length; i += 1) {
     let nameTech = {
       tech: tech[i],
       name: name,
     };
-    message.push(nameTech);
+    msg.push(nameTech);
   }
   if (tech.length === 0) {
     return 'Vazio!';
   }
-  return message;
+  return msg;
 }
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'Javascript'], 'Lucas'));
+
 
 module.exports = {
   calcArea,
