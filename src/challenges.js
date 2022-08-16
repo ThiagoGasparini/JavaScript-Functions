@@ -2,9 +2,8 @@
 function compareTrue(p1, p2) {
   if (p1 && p2 === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // Desafio 2
@@ -14,21 +13,20 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  let resultado = string.split(" ");
+  let resultado = string.split(' ');
   return resultado;
 }
 
 // Desafio 4
-let arr = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 function concatName(arr) {
-  let resultado = arr[arr.length - 1] + ', ' + arr[0];
+  let resultado = `${arr[arr.length - 1]}, ${arr[0]}`;
   return resultado;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  resultado = (wins * 3) + ties;
-  return resultado
+  let resultado = wins * 3 + ties;
+  return resultado;
 }
 
 // Desafio 6
@@ -50,7 +48,8 @@ function catAndMouse(mouse, cat1, cat2) {
 
   if (dist1 < dist2) {
     return 'cat1';
-  } else if (dist2 < dist1) {
+  }
+  if (dist2 < dist1) {
     return 'cat2';
   }
   return 'os gatos trombam e o rato foge';
@@ -58,19 +57,19 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(array) {
-  let puxar = [];
+  let push = [];
   for (let num of array) {
     if (num % 3 === 0 && num % 5 === 0) {
-      puxar.push('fizzBuzz');
+      push.push('fizzBuzz');
     } else if (num % 5 === 0) {
-      puxar.push('buzz');
+      push.push('buzz');
     } else if (num % 3 === 0) {
-      puxar.push('fizz');
+      push.push('fizz');
     } else {
-      puxar.push('bug!');
+      push.push('bug!');
     }
   }
-  return puxar;
+  return push;
 }
 
 // Desafio 9
@@ -102,7 +101,7 @@ function techList(tech, name) {
   for (let i = 0; i < tech.length; i += 1) {
     let nameTech = {
       tech: tech[i],
-      name: name,
+      name,
     };
     msg.push(nameTech);
   }
@@ -111,7 +110,6 @@ function techList(tech, name) {
   }
   return msg;
 }
-
 
 module.exports = {
   calcArea,
